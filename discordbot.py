@@ -8,7 +8,7 @@ load_dotenv()
 PREFIX = os.environ['PREFIX']
 TOKEN = os.environ['TOKEN']
 
-client = discord.Client()
+client = discord.Client(intents = discord.Intents.all())
 
 @client.event
 async def on_ready():
@@ -16,16 +16,12 @@ async def on_ready():
     await client.change_presence(status=discord.Status.online, activity=discord.Game("문의는 강혁#1647으로 디엠해주세요"))
 
 @client.event
+
 async def on_message(message):
-
-    if message.content == f'{PREFIX}call':
-        await message.channel.send("callback!")
-
-    if message.content.startswith(f'!출근'):
-        await message.channel.send(" {}, 님이 출근하셨습니다".format( message.author.mention))
-        
-    if message.content.startswith(f'!퇴근'):
-        await message.channel.send(" {}, 님이 퇴근하셨습니다".format( message.author.mention)))
+    if message.content == "!출근": # 메세지 감지
+        await message.channel.send (" {}, 님이 출근하셨습니다".format( message.author.mention))
+    if message.content == "!퇴근": # 메세지 감지
+        await message.channel.send (" {}, 님이 퇴근하셨습니다".format( message.author.mention))
 
 
 try:
