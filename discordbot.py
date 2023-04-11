@@ -30,3 +30,24 @@ try:
     client.run(TOKEN)
 except discord.errors.LoginFailure as e:
     print("Improper token has been passed.")
+    import discord, asyncio
+
+client = discord.Client(intents = discord.Intents.all())
+
+@client.event
+async def on_ready(): 
+    print("이 문장은 Python의 내장 함수를 출력하는 터미널에서 실행됩니다\n지금 보이는 것 처럼 말이죠")
+    await client.change_presence(status=discord.Status.online, activity=discord.Game("문의는 강혁#1647으로 디엠해주세요"))
+
+@client.event
+
+async def on_message(message):
+    if message.content == "!출근": 
+        await message.channel.send (" {}, 님이 출근하셨습니다".format( message.author.mention))
+    if message.content == "!퇴근": # 메세지 감지
+        await message.channel.send (" {}, 님이 퇴근하셨습니다".format( message.author.mention))
+    
+
+
+
+client.run('MTA5NTAwNTEyNDQzMjI1Mjk3OA.GXe2Ic.HJYGWCW1QgpefhPN3x0NUuMu6zmT_VAbHfxMpM')
