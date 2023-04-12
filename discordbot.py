@@ -18,9 +18,9 @@ async def on_ready():
 @client.event
 
 async def on_message(message):
-    if message.content == "!출근": # 메세지 감지
+    if message.content == "!ㅊㄱ": # 메세지 감지
         await message.channel.send (" {}, 님이 출근하셨습니다".format( message.author.mention))
-    if message.content == "!퇴근": # 메세지 감지
+    if message.content == "!": # 메세지 감지
         await message.channel.send (" {}, 님이 퇴근하셨습니다".format( message.author.mention))
 
 
