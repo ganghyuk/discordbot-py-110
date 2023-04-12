@@ -20,7 +20,7 @@ async def on_ready():
 async def on_message(message):
     if message.content == "!ㅊㄱ": # 메세지 감지
         await message.channel.send (" {}, 님이 출근하셨습니다".format( message.author.mention))
-    if message.content == "!": # 메세지 감지
+    if message.content == "!ㅌㄱ": # 메세지 감지
         await message.channel.send (" {}, 님이 퇴근하셨습니다".format( message.author.mention))
 
 
