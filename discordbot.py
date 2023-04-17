@@ -22,6 +22,8 @@ async def on_message(message):
         await message.channel.send (" {}, 님이 출근하셨습니다".format( message.author.mention))
     if message.content == "!ㅌㄱ": # 메세지 감지
         await message.channel.send (" {}, 님이 퇴근하셨습니다".format( message.author.mention))
+    if message.content == "야이시잘년아": # 메세지 감지
+        await message.channel.send (" 네? 주인님 부르셨어요? ")
 
 
 try:
