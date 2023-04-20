@@ -26,6 +26,10 @@ async def on_message(message):
         await message.channel.send (" 네? 주인님 부르셨어요? ")
     if message.content == "!강혁": # 메세지 감지
         await message.channel.send (" 저의 창조주이십니다. ♡ ")
+    if message.content == "!슈_": # 메세지 감지
+        await message.channel.send (" 귀여운거 보면 꼴리는 여자 ")
+    if message.content == "!바다": # 메세지 감지
+        await message.channel.send (" 서버 공식 귀요미입니다 ")
     
 
 
