@@ -13,7 +13,7 @@ client = discord.Client(intents = discord.Intents.all())
 @client.event
 async def on_ready():
     print(f'Logged in as {client.user}.')
-    await client.change_presence(status=discord.Status.online, activity=discord.Game(" 서포트서버 https://discord.gg/spongebob-squarepants "))
+    await client.change_presence(status=discord.Status.online, activity=discord.Game(" 강혁최강 "))
 
 @client.event
 
