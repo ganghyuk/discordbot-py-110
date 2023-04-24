@@ -44,6 +44,8 @@ async def on_message(message):
         await message.channel.send (" 서버에서 유일한 정상적인 사람입니다 ")
     if message.content == "!삼점": # 메세지 감지
         await message.channel.send (" 놀아주십시오 ")
+    if message.content == "!고뤠": # 메세지 감지
+        await message.channel.send (" 발로란트 같이 해주세요 ")
 
 
 try:
