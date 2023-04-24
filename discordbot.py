@@ -46,7 +46,7 @@ async def on_message(message):
         await message.channel.send (" 친구가 필요합니다. ")
     if message.content == "!고뤠": # 메세지 감지
         await message.channel.send (" 발로란트 같이 해주세요 ")
-    if message.content == "!": # 메세지 감지
+    if message.content == "!호두": # 메세지 감지
         await message.channel.send (" 저 기타 라이브하는데 들으러 와주세요! ")
 
 try:
