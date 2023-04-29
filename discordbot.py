@@ -22,8 +22,8 @@ async def on_message(message):
         await message.channel.send (" {}, 님이 출근하셨습니다".format( message.author.mention))
     if message.content == "!ㅌㄱ": # 메세지 감지
         await message.channel.send (" {}, 님이 퇴근하셨습니다".format( message.author.mention))
-    if message.content == "야이시잘년아": # 메세지 감지
-        await message.channel.send (" 네? 주인님 부르셨어요? ")
+    if message.content == "!예은": # 메세지 감지
+        await message.channel.send (" 큐티뽀짝 서버대표 기요미 ")
     if message.content == "!강혁": # 메세지 감지
         await message.channel.send (" 저의 창조주이시고, 이 서버의 최강존잘지존이십니다 . ♡ ")
     if message.content == "!슈_": # 메세지 감지
@@ -46,8 +46,8 @@ async def on_message(message):
         await message.channel.send (" 친구가 필요합니다. ")
     if message.content == "!고뤠": # 메세지 감지
         await message.channel.send (" 발로란트 같이 해주세요 ")
-    if message.content == "!예은": # 메세지 감지
-        await message.channel.send (" 큐티뽀짝 서버대표 기요미  ")
+    if message.content == "!아루루": # 메세지 감지
+        await message.channel.send (" 카트 중섭 아랭 500위 한섭 스랭 마스터 고인물 입니다.  ")
     
     
 
