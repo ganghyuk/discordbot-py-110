@@ -48,7 +48,7 @@ async def on_message(message):
         await message.channel.send (" 발로란트 같이 해주세요 ")
     if message.content == "!아루루": # 메세지 감지
         await message.channel.send (" 카트 중섭 아랭 500위 한섭 스랭 마스터 고인물 입니다. ")
-    if message.content == "!아루루": # 메세지 감지
+    if message.content == "!예은": # 메세지 감지
         await message.channel.send (" 큐티뽀짝 서버대표 기요미  ")
 
 try:
